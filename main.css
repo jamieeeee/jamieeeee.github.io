@@ -7,7 +7,19 @@ body {
 }
 
 
+#poster {
+  
+  height: 90%;
+  width: 90%;
+  padding-left: 9%;
+}
 
+#faq {
+  height: 90%;
+  width: 90%;
+  padding-left: 9%;
+
+}
 
 img{
 
