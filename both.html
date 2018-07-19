@@ -4,24 +4,35 @@
 	<head>
 		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	</head>
 
 
 	<body>
 
-		<nav>
-		  <ul>
-		    
-		    <li><a href="index.html">HEM</a></li>
-		    <li><a href="lineup.html">LINEUP</a></li>
-		    <li><a href="om.html">OM</a></li>
-		    
-		    
-		  </ul>
-		</nav>
+		<div class="topnav" id="myTopnav">
+		  <a href="index.html" class="active">HEM</a>
+		  <a href="lineup.html">LINEUP</a>
+		  <a href="om.html">OM</a>
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		    <i class="fa fa-bars"></i>
+		  </a>
+		</div>
 
 		<img id ="mambodjambo" src="mambodjambo.jpg" alt="poster" class="center">
+
+		<script type="text/javascript">
+			
+			function myFunction() {
+			    var x = document.getElementById("myTopnav");
+			    if (x.className === "topnav") {
+			        x.className += " responsive";
+			    } else {
+			        x.className = "topnav";
+			    }
+			}
+		</script>
 
 	</body>
 	</html>
